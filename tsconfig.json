@@ -1,0 +1,36 @@
+{
+    "compilerOptions": {
+        "target": "ES6",
+        "module": "ESNext",
+        "lib": [
+            "ES2020",
+            "dom"
+        ],
+        "baseUrl": ".",
+        "isolatedModules": true,
+        "jsx": "preserve",
+        "moduleResolution": "Node",
+        "verbatimModuleSyntax": true,
+        "resolveJsonModule": true,
+        "useDefineForClassFields": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "paths": {
+            "@/*": [
+                "./resources/js/*"
+            ]
+        },
+        "types": [
+            "vite/client"
+        ]
+    },
+    "include": [
+        "resources/js/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "public"
+    ]
+}
