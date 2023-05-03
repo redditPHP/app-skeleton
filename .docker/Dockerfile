@@ -4,8 +4,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 ENV TZ=Etc/UTC
 
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime \
-    && echo $TZ > /etc/timezone \
-    && git config --global --add safe.directory /var/www/html
+    && echo $TZ > /etc/timezone
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
@@ -17,7 +16,8 @@ RUN apt-get update \
         software-properties-common \
         unzip \
         wget \
-    && a2enmod rewrite
+    && a2enmod rewrite \
+    && git config --global --add safe.directory /var/www/html
 
 RUN curl -sL https://deb.nodesource.com/setup_18.x | bash - \
     && apt-get install -y --no-install-recommends nodejs \
