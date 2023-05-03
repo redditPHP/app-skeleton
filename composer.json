@@ -1,0 +1,36 @@
+{
+    "name": "redditphp/app-skeleton",
+    "type": "project",
+    "license": "MIT",
+    "description": "",
+    "homepage": "https://example.com/",
+    "authors": [
+        {
+            "name": "Carl",
+            "homepage": "https://github.com/weirdlooop"
+        },
+        {
+            "name": "Garrett W.",
+            "homepage": "https://github.com/garrettw"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/redditPHP/app-skeleton/issues"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "minimum-stability": "dev",
+        "prefer-stable": true
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/redditPHP/redditPHP"
+        }
+    ],
+    "require": {
+        "redditphp/redditphp": "dev-main"
+    }
+}
