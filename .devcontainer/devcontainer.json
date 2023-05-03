@@ -1,0 +1,48 @@
+// https://aka.ms/devcontainer.json
+{
+	"name": "Existing Docker Compose (Extend)",
+	"dockerComposeFile": [
+		"../docker-compose.yml"
+	],
+	"service": "framework-app.test",
+	"workspaceFolder": "/var/www/html",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"formulahendry.auto-complete-tag",
+				"alefragnani.bookmarks",
+				"predrag-nikolic.php-class-helper",
+				"ikappas.composer",
+				"dbaeumer.vscode-eslint",
+				"eamodio.gitlens",
+				"nhoizey.gremlins",
+				"heybourn.headwind",
+				"ecmel.vscode-html-css",
+				"zignd.html-css-class-completion",
+				"oderwat.indent-rainbow",
+				"xabikos.javascriptsnippets",
+				"jakebathman.mysql-syntax",
+				"christian-kohler.npm-intellisense",
+				"xdebug.php-pack",
+				"neilbrayfield.php-docblocker",
+				"bmewburn.vscode-intelephense-client",
+				"mehedidracula.php-namespace-resolver",
+				"bradlc.vscode-tailwindcss",
+				"alfredbirk.tailwind-documentation",
+				"stivo.tailwind-fold",
+				"pflannery.vscode-versionlens",
+				"octref.vetur",
+				"vue.volar",
+				"hollowtree.vue-snippets",
+				"redhat.vscode-yaml",
+				"gamunu.vscode-yarn"
+			],
+			"settings": {}
+		}
+	},
+	// "remoteUser": "sail",
+	"postCreateCommand": "chown -R 1000:1000 /var/www/html"
+	// "forwardPorts": [],
+	// "runServices": [],
+	// "shutdownAction": "none",
+}
