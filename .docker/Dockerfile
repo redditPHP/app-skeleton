@@ -4,7 +4,8 @@ ENV DEBIAN_FRONTEND=noninteractive
 ENV TZ=Etc/UTC
 
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime \
-    && echo $TZ > /etc/timezone
+    && echo $TZ > /etc/timezone \
+    && git config --global --add safe.directory /var/www/html
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \

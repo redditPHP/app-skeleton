@@ -35,7 +35,8 @@
 				"vue.volar",
 				"hollowtree.vue-snippets",
 				"redhat.vscode-yaml",
-				"gamunu.vscode-yarn"
+				"gamunu.vscode-yarn",
+				"GitHub.vscode-pull-request-github"
 			],
 			"settings": {}
 		}
